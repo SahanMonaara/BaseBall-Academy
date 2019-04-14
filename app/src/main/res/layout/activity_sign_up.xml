@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <TextView
+           android:text="Sign Up to Go Forward"
+           android:textAlignment="center"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/name"
+            android:hint="First Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/mobileNumber"
+            android:hint="Last Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/hostal"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/roomNumber"
+            android:hint="User Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/faculty"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <ru.katso.livebutton.LiveButton
+            android:layout_gravity="center"
+            android:id="@+id/signupBtn"
+            xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:text="Sign up"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            livebutton:corners="4dp"
+            livebutton:normalHeight="6dp"
+            livebutton:pressedHeight="2dp"
+            livebutton:backgroundColor="@color/colorPrimary"
+            livebutton:shadowColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
