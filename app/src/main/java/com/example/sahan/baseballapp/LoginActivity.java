@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
                 uname= userName.getText().toString().trim();
                 pwd= password.getText().toString().trim();
                 if(uname.equals("test") && pwd.equals("123456")){
-                    Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this,MainPage.class);
                     startActivity(intent);
                     finish();
                 }

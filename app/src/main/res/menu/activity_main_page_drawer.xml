@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/whatsnew"
+            android:icon="@drawable/new2"
+            android:title="What's New" />
+        <item
+            android:id="@+id/invite"
+            android:icon="@drawable/invite"
+            android:title="Invite Friends" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Log out" />
+
+    </group>
+
+
+</menu>
