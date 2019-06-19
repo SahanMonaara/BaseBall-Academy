@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sahan.baseballapp">
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,7 +34,8 @@
         <activity android:name=".CatcherActivity" />
         <activity android:name=".PitcherActivity" />
         <activity android:name=".YoutubeActivity" />
-        <activity android:name=".SetPositionActivity"></activity>
+        <activity android:name=".SetPositionActivity" />
+        <activity android:name=".YoutubePlayerActivity"></activity>
     </application>
 
 </manifest>
