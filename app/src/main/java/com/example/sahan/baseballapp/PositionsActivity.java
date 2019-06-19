@@ -32,7 +32,7 @@ public class PositionsActivity extends AppCompatActivity {
 
                     }
                     if (finalI==1){
-                        Intent intent = new Intent(PositionsActivity.this,CatcherActivity.class);
+                        Intent intent = new Intent(PositionsActivity.this,OutFieldActivity.class);
                         startActivity(intent);
 
                     }

@@ -26,7 +26,7 @@
                 android:layout_margin="50dp"
                 android:gravity="center"
                 android:textColor="#fff"
-                android:text="Select Your Position "
+                android:text="Select Your Category "
                 android:textSize="25dp"
                 android:textStyle="bold" />
             <LinearLayout
@@ -35,7 +35,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp">
-
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -66,7 +65,41 @@
                             android:textStyle="bold"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="First Base" />
+                            android:text="Infield Skills" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#C4E538"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_margin="16dp"
+                        android:orientation="horizontal">
+
+                        <!--       <ImageView
+                                   android:layout_width="100dp"
+                                   android:layout_height="match_parent"
+                                   android:layout_gravity="center_vertical"
+                                   android:src="@drawable/position" />-->
+
+                        <TextView
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="First Base Drills" />
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -101,7 +134,7 @@
                             android:textStyle="bold"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Second Base" />
+                            android:text="Second Base Drills" />
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -136,7 +169,7 @@
                             android:textStyle="bold"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Short" />
+                            android:text="Shortstop Drills" />
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -169,7 +202,7 @@
                             android:textStyle="bold"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Third Base"
+                            android:text="Third Base Drills"
                             android:gravity="center"
                             android:textSize="20sp"/>
                     </LinearLayout>

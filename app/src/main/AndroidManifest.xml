@@ -35,7 +35,8 @@
         <activity android:name=".PitcherActivity" />
         <activity android:name=".YoutubeActivity" />
         <activity android:name=".SetPositionActivity" />
-        <activity android:name=".YoutubePlayerActivity"></activity>
+        <activity android:name=".YoutubePlayerActivity" />
+        <activity android:name=".OutfieldSkillsActivity"></activity>
     </application>
 
 </manifest>

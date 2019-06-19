@@ -114,6 +114,13 @@ public class MainPage extends AppCompatActivity
                         startActivity(intent);
 
                     }
+                    if (finalI==4){
+                        Intent intent = new Intent(MainPage.this,YoutubeActivity.class);
+                        intent.putExtra("SelectedType","Motivation");
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+
+                    }
 
 
                 }

@@ -1,15 +1,48 @@
 package com.example.sahan.baseballapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 
 public class OutFieldActivity extends AppCompatActivity {
-
+    LinearLayout mainGrid10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_out_field);
+        mainGrid10 = (LinearLayout) findViewById(R.id.mainGrid10);
+        setSingleEvent(mainGrid10);
+    }
+
+    private void setSingleEvent(LinearLayout mainGrid2) {
+        for (int i = 0 ; i<mainGrid2.getChildCount();i++){
+            CardView cardView = (CardView) mainGrid2.getChildAt(i);
+            final int finalI= i;
+            cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (finalI==0){
+                        Intent intent = new Intent(OutFieldActivity.this,OutfieldSkillsActivity.class);
+                        startActivity(intent);
+
+                    }
+                    if (finalI==1){
+                        Intent intent = new Intent(OutFieldActivity.this,YoutubeActivity.class);
+                        intent.putExtra("SelectedType","OutfieldDrills");
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+
+                    }
+
+
+
+                }
+            });
+        }
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

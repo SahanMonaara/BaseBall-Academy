@@ -17,9 +17,9 @@ public class PitcherActivity extends AppCompatActivity {
         mainGrid5 = findViewById(R.id.mainGrid5);
         setSingleEvent(mainGrid5);
     }
-    private void setSingleEvent(LinearLayout mainGrid2) {
-        for (int i = 0 ; i<mainGrid2.getChildCount();i++){
-            CardView cardView = (CardView) mainGrid2.getChildAt(i);
+    private void setSingleEvent(LinearLayout mainGrid5) {
+        for (int i = 0 ; i<mainGrid5.getChildCount();i++){
+            CardView cardView = (CardView) mainGrid5.getChildAt(i);
             final int finalI= i;
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -30,18 +30,29 @@ public class PitcherActivity extends AppCompatActivity {
 
                     }
                     if (finalI==1){
-                        Intent intent = new Intent(PitcherActivity.this,CatcherActivity.class);
+                        Intent intent = new Intent(PitcherActivity.this,YoutubeActivity.class);
+                        intent.putExtra("SelectedType","Catching");
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
 
                     }
                     if (finalI==2){
-                        Intent intent = new Intent(PitcherActivity.this,CatcherActivity.class);
+                        Intent intent = new Intent(PitcherActivity.this,YoutubeActivity.class);
+                        intent.putExtra("SelectedType","Throwing");
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
 
                     }
                     if (finalI==3){
                         Intent intent = new Intent(PitcherActivity.this,YoutubeActivity.class);
                         intent.putExtra("SelectedType","Fielding");
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+
+                    }
+                    if (finalI==4){
+                        Intent intent = new Intent(PitcherActivity.this,YoutubeActivity.class);
+                        intent.putExtra("SelectedType","PitchingDrills");
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
 

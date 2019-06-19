@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Baseball Academy</string>
     <string name="title_activity_main_page">MainPage</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -23,6 +23,85 @@
         <item>o14pyzosjvk</item>
         <item>5SQrpBQne7A</item>
         <item>5WJ3r67ORxo</item>
+    </string-array>
+
+    <string-array name="first_base_drills">
+        <item>q6FtbgEeox8</item>
+        <item>Q7TTwBnwwFM</item>
+        <item>IjsnwvEdIW0</item>
+        <item>5S1APvjy02E</item>
+        <item>axcsHJ8H0AM</item>
+        <item>5k-CB4uu9yA</item>
+    </string-array>
+
+    <string-array name="second_base_drills">
+        <item>GS6cJ7C5H-c</item>
+        <item>GpF_2kWeGsw</item>
+
+    </string-array>
+
+    <string-array name="third_base_drills">
+        <item>d3G6J438wdU</item>
+    </string-array>
+
+    <string-array name="shortstop">
+        <item>jrBbIDfNRtg</item>
+        <item>VSPj-cOF4wI</item>
+    </string-array>
+
+    <string-array name="pitching">
+        <item>P0V6s3SJZts</item>
+        <item>oOkofpUqsCw</item>
+        <item>slR95O1YYks</item>
+        <item>lJ-9luQl71w</item>
+    </string-array>
+
+    <string-array name="catching_catcher">
+        <item>Oo_oYhqCfRM</item>
+    </string-array>
+
+    <string-array name="catching_throwing">
+        <item>P0V6s3SJZts</item>
+    </string-array>
+
+    <string-array name="catching_fielding">
+        <item>AtygjlJgL4Q</item>
+        <item>oqcP9dDEQD8</item>
+        <item>Ni6LFuk-v7M</item>
+        <item>Krqfam08Bc0</item>
+    </string-array>
+
+    <string-array name="catching_drills">
+        <item>uCTh9U1pexM</item>
+        <item>WbmN1zKeNDM</item>
+        <item>PZHYpO9f2v4-v7M</item>
+    </string-array>
+
+    <string-array name="outfield_skill_throw">
+        <item>yhRflFv8s18</item>
+    </string-array>
+    <string-array name="outfield_skill_fielding">
+        <item>AquPjo3lMS0</item>
+    </string-array>
+
+    <string-array name="outfield_skill_catching">
+        <item>1kLwkivjyD8</item>
+    </string-array>
+
+    <string-array name="outfield_drills">
+        <item>Lim1FtcGKY0</item>
+        <item>f0txSLf_RgQ</item>
+        <item>EGUsQvMFWVQ</item>
+        <item>yn_GDJuyyoY</item>
+        <item>_L_Lp7_rYb8</item>
+        <item>QmL2XHp2fVo</item>
+    </string-array>
+
+    <string-array name="batting_drills">
+        <item>c_xBDpo4XPM</item>
+        <item>_d7v7n2kFFQ</item>
+        <item>7sh_ADkh4m4</item>
+        <item>imz4I9CvQAY</item>
     </string-array>
 
     <string-array name="video_title_array">

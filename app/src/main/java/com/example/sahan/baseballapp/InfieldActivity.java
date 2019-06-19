@@ -19,9 +19,9 @@ public class InfieldActivity extends AppCompatActivity {
         mainGrid3 = (LinearLayout) findViewById(R.id.mainGrid3);
         setSingleEvent(mainGrid3);
     }
-    private void setSingleEvent(LinearLayout mainGrid2) {
-        for (int i = 0 ; i<mainGrid2.getChildCount();i++){
-            CardView cardView = (CardView) mainGrid2.getChildAt(i);
+    private void setSingleEvent(LinearLayout mainGrid3) {
+        for (int i = 0 ; i<mainGrid3.getChildCount();i++){
+            CardView cardView = (CardView) mainGrid3.getChildAt(i);
             final int finalI= i;
             cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -33,19 +33,26 @@ public class InfieldActivity extends AppCompatActivity {
                     }
                     if (finalI==1){
                         Intent intent = new Intent(InfieldActivity.this,YoutubeActivity.class);
-                        intent.putExtra("SelectedType","SecondBase");
+                        intent.putExtra("SelectedType","FirstBase");
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
 
                     }
                     if (finalI==2){
                         Intent intent = new Intent(InfieldActivity.this,YoutubeActivity.class);
-                        intent.putExtra("SelectedType","Short");
+                        intent.putExtra("SelectedType","SecondBase");
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
 
                     }
                     if (finalI==3){
+                        Intent intent = new Intent(InfieldActivity.this,YoutubeActivity.class);
+                        intent.putExtra("SelectedType","ShortStop");
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+
+                    }
+                    if (finalI==4){
                         Intent intent = new Intent(InfieldActivity.this,YoutubeActivity.class);
                         intent.putExtra("SelectedType","ThirdBase");
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
