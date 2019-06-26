@@ -5,9 +5,11 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="#2f3640"
     tools:context=".YoutubeActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
+        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"

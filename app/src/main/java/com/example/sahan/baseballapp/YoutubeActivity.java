@@ -51,7 +51,7 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.first_base_drills);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.first_base_drills_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -74,7 +74,7 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.second_base_drills);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.second_base_drills_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -97,7 +97,7 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.third_base_drills);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.third_base_drills_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -120,7 +120,7 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.shortstop);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.shortstop_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -138,12 +138,12 @@ public class YoutubeActivity extends AppCompatActivity {
         return youtubeVideoModelArrayList;
     }
 
-    private ArrayList<YoutubeVideoModel> generatePitchingVideoList() {
+    private ArrayList<YoutubeVideoModel> generatePitchingDrillsVideoList() {
         ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
 
         //get the video id array, title array and duration array from strings.xml
-        String[] videoIDArray = getResources().getStringArray(R.array.pitching);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoIDArray = getResources().getStringArray(R.array.pitching_drills);
+        String[] videoTitleArray = getResources().getStringArray(R.array.pitching_drills_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -166,7 +166,7 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.catching_catcher);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.catching_catcher_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -189,7 +189,7 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.catching_throwing);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.catching_throwing_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -212,7 +212,7 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.catching_fielding);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.catching_fielding_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -235,7 +235,7 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.catching_drills);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.catching_drills_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -258,7 +258,7 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.outfield_skill_throw);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.outfield_skill_trow_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -281,7 +281,30 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.outfield_skill_fielding);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.outfield_skill_fielding_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateOutFieldSkillCatchingVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.outfield_skill_catching);
+        String[] videoTitleArray = getResources().getStringArray(R.array.outfield_skill_catching_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -304,7 +327,7 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.outfield_skill_catching);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.outfield_skill_catching_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -327,7 +350,7 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.outfield_drills);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.outfield_drills_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -350,7 +373,260 @@ public class YoutubeActivity extends AppCompatActivity {
 
         //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.batting_drills);
-        String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
+        String[] videoTitleArray = getResources().getStringArray(R.array.batting_drills_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateBattingStanceVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.batting_stance);
+        String[] videoTitleArray = getResources().getStringArray(R.array.batting_stance_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateBattingGripVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.batting_grip);
+        String[] videoTitleArray = getResources().getStringArray(R.array.batting_grip_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateSetPositionVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.set_position);
+        String[] videoTitleArray = getResources().getStringArray(R.array.set_position_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateWinUpVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.wind_up);
+        String[] videoTitleArray = getResources().getStringArray(R.array.wind_up_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateInfieldThrowingVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.infield_skill_throwing);
+        String[] videoTitleArray = getResources().getStringArray(R.array.infield_skill_throwing_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateInfieldCatchingVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.infield_skill_catching);
+        String[] videoTitleArray = getResources().getStringArray(R.array.infield_skill_catching_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateInfieldFieldingVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.infield_skill_fielding);
+        String[] videoTitleArray = getResources().getStringArray(R.array.infield_skill_fielding_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateSpecificFieldingDrillsVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.specific_fielding_drills);
+        String[] videoTitleArray = getResources().getStringArray(R.array.specific_fielding_drills_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateSpecificBattingDrillsVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.specific_batting_drills);
+        String[] videoTitleArray = getResources().getStringArray(R.array.specific_batting_drills_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateBaseRunningVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.base_running);
+        String[] videoTitleArray = getResources().getStringArray(R.array.base_running_titles);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+
+        //loop through all items and add them to arraylist
+        for (int i = 0; i < videoIDArray.length; i++) {
+
+            YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
+            youtubeVideoModel.setVideoId(videoIDArray[i]);
+            youtubeVideoModel.setTitle(videoTitleArray[i]);
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
+
+            youtubeVideoModelArrayList.add(youtubeVideoModel);
+
+        }
+
+        return youtubeVideoModelArrayList;
+    }
+
+    private ArrayList<YoutubeVideoModel> generateMotivationVideoList() {
+        ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
+
+        //get the video id array, title array and duration array from strings.xml
+        String[] videoIDArray = getResources().getStringArray(R.array.motivation);
+        String[] videoTitleArray = getResources().getStringArray(R.array.motivation_titles);
         String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
         //loop through all items and add them to arraylist
@@ -444,7 +720,7 @@ public class YoutubeActivity extends AppCompatActivity {
                 }));
                 break;
             }
-            case "OutFieldDrills": {
+            case "OutfieldDrills": {
                 final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateOutfieldDrillVideoList();
                 YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
                 recyclerView.setAdapter(adapter);
@@ -534,7 +810,7 @@ public class YoutubeActivity extends AppCompatActivity {
                 }));
                 break;
             }
-            case "Pitching": {
+           /* case "Pitching": {
                 final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generatePitchingVideoList();
                 YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
                 recyclerView.setAdapter(adapter);
@@ -551,7 +827,7 @@ public class YoutubeActivity extends AppCompatActivity {
                     }
                 }));
                 break;
-            }
+            }*/
             case "CatchingCatching": {
                 final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateCatchingCatchingVideoList();
                 YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
@@ -570,7 +846,7 @@ public class YoutubeActivity extends AppCompatActivity {
                 }));
                 break;
             }
-            case "CatchingDrills": {
+            case "CatcherDrills": {
                 final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateCatchingDrillsVideoList();
                 YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
                 recyclerView.setAdapter(adapter);
@@ -608,6 +884,296 @@ public class YoutubeActivity extends AppCompatActivity {
             }
             case "CatchingThrowing": {
                 final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateCatchingThrowingVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "Stance": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateBattingStanceVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "Grip": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateBattingGripVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "SetPosition": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateSetPositionVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "WindPosition": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateWinUpVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "InfieldThrowing": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateInfieldThrowingVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "InfieldCatching": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateInfieldCatchingVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "InfieldFielding": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateInfieldFieldingVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+
+            case "BaseRunning": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateBaseRunningVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "FieldingDrills": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateSpecificFieldingDrillsVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "SpecificBattingDrills": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateSpecificBattingDrillsVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "Motivation": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateMotivationVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+
+            case "OutFieldSkillCatching": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateOutFieldSkillCatchingVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "PitcherCatching": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateInfieldCatchingVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "PitcherThrowing": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateInfieldThrowingVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "PitcherFielding": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateInfieldFieldingVideoList();
+                YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
+                recyclerView.setAdapter(adapter);
+
+                //set click event
+                recyclerView.addOnItemTouchListener(new RecyclerViewOnClickListener(this, new RecyclerViewOnClickListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View view, int position) {
+
+                        //start youtube player activity by passing selected video id via intent
+                        startActivity(new Intent(YoutubeActivity.this, YoutubePlayerActivity.class)
+                                .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
+
+                    }
+                }));
+                break;
+            }
+            case "PitchingDrills": {
+                final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generatePitchingDrillsVideoList();
                 YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
                 recyclerView.setAdapter(adapter);
 

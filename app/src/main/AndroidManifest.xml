@@ -10,6 +10,8 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
@@ -36,7 +38,8 @@
         <activity android:name=".YoutubeActivity" />
         <activity android:name=".SetPositionActivity" />
         <activity android:name=".YoutubePlayerActivity" />
-        <activity android:name=".OutfieldSkillsActivity"></activity>
+        <activity android:name=".OutfieldSkillsActivity" />
+        <activity android:name=".InfieldSkillsActivity"></activity>
     </application>
 
 </manifest>

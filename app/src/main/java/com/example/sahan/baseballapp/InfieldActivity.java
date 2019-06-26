@@ -27,7 +27,7 @@ public class InfieldActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (finalI==0){
-                        Intent intent = new Intent(InfieldActivity.this,CatcherActivity.class);
+                        Intent intent = new Intent(InfieldActivity.this,InfieldSkillsActivity.class);
                         startActivity(intent);
 
                     }

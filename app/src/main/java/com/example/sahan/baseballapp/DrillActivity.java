@@ -41,7 +41,7 @@ public class DrillActivity extends AppCompatActivity {
                     }
                     if (finalI==2){
                         Intent intent = new Intent(DrillActivity.this,YoutubeActivity.class);
-                        intent.putExtra("SelectedType","BattingDrills");
+                        intent.putExtra("SelectedType","SpecificBattingDrills");
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
 

@@ -34,34 +34,68 @@
         <item>5k-CB4uu9yA</item>
     </string-array>
 
+    <string-array name="first_base_drills_titles">
+        <item>First Base Footwork Drills Fundamentals of Playing First Base Part</item>
+        <item>First Base Drills Fundamentals of First Base Series by IMG Academy Baseball </item>
+        <item>First Base Footwork Drills Fundamentals of First Base Series</item>
+        <item>First Base Footwork Drills Fundamentals of First Base Series</item>
+        <item>First Basemen, Receiving a Throw at a Base Force Play</item>
+        <item>4 Hole Coverage Fundamentals of First Base Series</item>
+    </string-array>
+
     <string-array name="second_base_drills">
         <item>GS6cJ7C5H-c</item>
         <item>GpF_2kWeGsw</item>
+    </string-array>
 
+    <string-array name="second_base_drills_titles">
+        <item>Second Base Drills Middle Infield Series</item>
+        <item>How to Turn a Double Play From Second Base! Baseball Fielding Drills</item>
     </string-array>
 
     <string-array name="third_base_drills">
         <item>d3G6J438wdU</item>
     </string-array>
 
+    <string-array name="third_base_drills_titles">
+        <item>BEST Baseball Infield Drills For THIRD BASEMAN</item>
+    </string-array>
     <string-array name="shortstop">
         <item>jrBbIDfNRtg</item>
         <item>VSPj-cOF4wI</item>
     </string-array>
 
-    <string-array name="pitching">
+    <string-array name="shortstop_titles">
+        <item>How to Turn a Double Play From Shortstop! Baseball Fielding Drills</item>
+        <item>5 Simple Keys ?? To Become A Better Shortstop Baseball Fielding Tips</item>
+    </string-array>
+
+    <string-array name="pitching_drills">
         <item>P0V6s3SJZts</item>
         <item>oOkofpUqsCw</item>
         <item>slR95O1YYks</item>
         <item>lJ-9luQl71w</item>
     </string-array>
 
+    <string-array name="pitching_drills_titles">
+        <item>Baseball Pitching Drills You Can Do AT HOME!</item>
+        <item>Baseball Pitching Grips How to Throw a Curve ball</item>
+        <item>Baseball Pitching Towel Drill! THROW GAS!!</item>
+        <item>7 Commandments of Pitching Baseball Pitching Tips</item>
+    </string-array>
+
     <string-array name="catching_catcher">
         <item>Oo_oYhqCfRM</item>
+    </string-array>
+    <string-array name="catching_catcher_titles">
+        <item>Receiving and Receiving Position Catcher Fundamentals</item>
     </string-array>
 
     <string-array name="catching_throwing">
         <item>P0V6s3SJZts</item>
+    </string-array>
+    <string-array name="catching_throwing_titles">
+        <item>Catcher-Throwing</item>
     </string-array>
 
     <string-array name="catching_fielding">
@@ -71,21 +105,44 @@
         <item>Krqfam08Bc0</item>
     </string-array>
 
+    <string-array name="catching_fielding_titles">
+        <item>Fielding Bunts Catcher Fundamentals</item>
+        <item>Bunting Drills Catcher Fundamentals</item>
+        <item>Catcher Drills Catcher Fundamentals</item>
+        <item>Catcher Blocking Drills</item>
+    </string-array>
+
     <string-array name="catching_drills">
         <item>uCTh9U1pexM</item>
         <item>WbmN1zKeNDM</item>
         <item>PZHYpO9f2v4-v7M</item>
     </string-array>
 
+    <string-array name="catching_drills_titles">
+        <item>Baseball Catching Drills To Improve Your Footwork and Throwing</item>
+        <item>Baseball Catching Drills</item>
+        <item>Baseball Catching Drills T Drill</item>
+    </string-array>
+
     <string-array name="outfield_skill_throw">
         <item>yhRflFv8s18</item>
     </string-array>
+    <string-array name="outfield_skill_trow_titles">
+        <item>Baseball Outfield Throwing Mechanics</item>
+    </string-array>
+
     <string-array name="outfield_skill_fielding">
-        <item>AquPjo3lMS0</item>
+        <item>_L_Lp7_rYb8</item>
+    </string-array>
+    <string-array name="outfield_skill_fielding_titles">
+        <item>Outfield Tips Fielding The Baseball</item>
     </string-array>
 
     <string-array name="outfield_skill_catching">
         <item>1kLwkivjyD8</item>
+    </string-array>
+    <string-array name="outfield_skill_catching_titles">
+        <item>How to Catch a Baseball ;CATCHING SKILL</item>
     </string-array>
 
     <string-array name="outfield_drills">
@@ -97,12 +154,148 @@
         <item>QmL2XHp2fVo</item>
     </string-array>
 
+    <string-array name="outfield_drills_titles">
+        <item>Outfielder Drill Long Hop Throwing Receiving and Throwing as an Outfielder</item>
+        <item>Outfielder Drills Receiving and Throwing as an Outfielder</item>
+        <item>Z Drill Receiving and Throwing as an Outfielder</item>
+        <item>Outfielder Drills Receiving and Throwing as an Outfielder</item>
+        <item>Outfield Tips Fielding The Baseball</item>
+        <item>Baseball Outfield Drills</item>
+    </string-array>
+
     <string-array name="batting_drills">
         <item>c_xBDpo4XPM</item>
         <item>_d7v7n2kFFQ</item>
         <item>7sh_ADkh4m4</item>
         <item>imz4I9CvQAY</item>
     </string-array>
+
+    <string-array name="batting_drills_titles">
+        <item>HITTERS STEAL</item>
+        <item>CRUSH MORE HOME RUNS </item>
+        <item>Baseball Hitting Drills</item>
+        <item>Drills to Develop Perfect Baseball Hitting Mechanics!</item>
+    </string-array>
+
+    <string-array name="batting_stance">
+        <item>jwQO0Osfk90</item>
+    </string-array>
+    <string-array name="batting_stance_titles">
+        <item>Baseball Hitting Stance</item>
+    </string-array>
+
+    <string-array name="batting_grip">
+        <item>cNTX4qDpLL4</item>
+    </string-array>
+    <string-array name="batting_grip_titles">
+        <item>How To Grip A Baseball Bat</item>
+    </string-array>
+
+    <string-array name="set_position">
+        <item>BkIRlGS7HHE</item>
+    </string-array>
+    <string-array name="set_position_titles">
+        <item>How to Pitch from the Stretch</item>
+    </string-array>
+
+    <string-array name="wind_up">
+        <item>2MhYa_BQ6s8</item>
+    </string-array>
+    <string-array name="wind_up_titles">
+        <item>Pitching stance windup</item>
+    </string-array>
+
+    <string-array name="infield_skill_catching">
+        <item>LpAQzW4wG8U</item>
+        <item>x93pgofCj44</item>
+    </string-array>
+    <string-array name="infield_skill_catching_titles">
+        <item>How to Catch a Baseball  ;CATCHING SKILL</item>
+        <item>Baseball Catching Skills ; FOOTWORK!</item>
+    </string-array>
+    <string-array name="infield_skill_fielding">
+        <item>oqPSpx9BfsA</item>
+    </string-array>
+    <string-array name="infield_skill_fielding_titles">
+        <item>How to Field a Ground Ball Baseball Fielding</item>
+    </string-array>
+    <string-array name="infield_skill_throwing">
+        <item>aLB0xE0R3FM</item>
+    </string-array>
+    <string-array name="infield_skill_throwing_titles">
+        <item>Infield Throwing Basics</item>
+    </string-array>
+
+
+    <string-array name="base_running">
+        <item>GWzXaJS7dYs</item>
+        <item>kchK1vKns2M</item>
+        <item>Mf1laW9WCgI</item>
+        <item>viVW1Zm0Jlc</item>
+        <item>ofQAIlxOv4M</item>
+    </string-array>
+
+    <string-array name="base_running_titles">
+        <item>Base-running</item>
+        <item>How To STEAL BASES</item>
+        <item>Base-running Drill</item>
+        <item>Baserunning Drills 2nd Base Leads Baserunning Series</item>
+        <item>Possible Doubles Baserunning Fundamentals Series</item>
+    </string-array>
+
+
+
+    <string-array name="specific_fielding_drills">
+        <item>-P5mGNTIveI</item>
+        <item>E2sFaQRPrAM</item>
+        <item>uj_xIa26PoU</item>
+        <item>XzrzkQmSFKc</item>
+        <item>cWxVMlDaXoU</item>
+        <item>SLKKAHV7Lms</item>
+        <item>SsGlLSU3goU</item>
+    </string-array>
+
+    <string-array name="specific_fielding_drills_titles">
+        <item>Infield Drills Baseball Fielding</item>
+        <item>How To Field a Ground Ball BACKHAND!</item>
+        <item>Baseball Fielding Drills</item>
+        <item>Infield Drills Fielding a Ground Ball Infield Play</item>
+        <item>Infield Drills Baseball Fielding</item>
+        <item>Baseball Fielding Drills For Youth Players</item>
+        <item>Infield Drills For Kids</item>
+    </string-array>
+
+    <string-array name="specific_batting_drills">
+        <item>MBrDgLDZsYQ</item>
+        <item>NzECItWWbdk</item>
+        <item>qzWaDw8NouA</item>
+        <item>EdNJP7ZUpE4</item>
+    </string-array>
+
+    <string-array name="specific_batting_drills_titles">
+        <item>How To PLACE YOUR HITS In Baseball!</item>
+        <item>Increase Your Bat Speed</item>
+        <item>INSTANTLY Create Blazing Bat Speed RAPID ROTATION DRILL</item>
+        <item>THE 7 BEST YOUTH BASEBALL HITTING DRILLS!</item>
+    </string-array>
+
+    <string-array name="motivation">
+        <item>KTZXlsVUL5U</item>
+        <item>pR-TkyndBc4</item>
+        <item>Ue6qNCuyOPQ</item>
+    </string-array>
+
+    <string-array name="motivation_titles">
+        <item>Baseball Motivational video</item>
+        <item>MLB Motivational, Why we love Baseball!!</item>
+        <item>Motivational Baseball Video</item>
+    </string-array>
+
+
+
+
+
+
 
     <string-array name="video_title_array">
         <item>Android Security Lock Demo</item>
